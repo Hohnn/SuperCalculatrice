@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>Super Calculatrice</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculatrice">
+            <div class="screen" id="screen"></div>
+            <div class="mode" id="mode">
+                <button type="button" data-button="button" data-translate="/" ><i class="fas fa-divide"></i></button>
+                <button type="button" data-button="button" data-translate="*" ><i class="fas fa-times"></i></button>
+                <button type="button" data-button="button" data-translate="-" ><i class="fas fa-minus"></i></button>
+                <button type="button" data-button="button" data-translate="+" ><i class="fas fa-plus"></i></button>
+                <button type="button" data-button="button" data-translate="%" ><i class="fas fa-percentage"></i></button>
+                <button type="button" data-button="button" data-translate="clean">C</button>
+            </div>
+            <div class="clavier" id="clavier">
+                <div class="touche" data-button="touch" data-translate="9">9</div>
+                <div class="touche" data-button="touch" data-translate="8">8</div>
+                <div class="touche" data-button="touch" data-translate="7">7</div>
+                <div class="touche" data-button="touch" data-translate="6">6</div>
+                <div class="touche" data-button="touch" data-translate="5">5</div>
+                <div class="touche" data-button="touch" data-translate="4">4</div>
+                <div class="touche" data-button="touch" data-translate="3">3</div>
+                <div class="touche" data-button="touch" data-translate="2">2</div>
+                <div class="touche" data-button="touch" data-translate="1">1</div>
+                <div class="touche equal" data-button="equal" data-translate="="><i class="fas fa-equals"></i></div>
+                <div class="touche" data-button="touch" data-translate=",">.</div>                
+                <div class="touche" data-button="touch" data-translate="0">0</div>                
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/07a566fd3a.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+body {
+  background-color: #292929;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 40px;
+  color: white;
+  font-family: "Texturina", serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .calculatrice {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  padding: 5px;
+}
+
+.container .calculatrice .screen {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  background: #e0e0e0;
+  -webkit-box-shadow: inset 9px 9px 10px #bebebe, inset -9px -9px 10px #ffffff;
+          box-shadow: inset 9px 9px 10px #bebebe, inset -9px -9px 10px #ffffff;
+}
+
+.container .calculatrice .mode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
+.container .calculatrice .mode button {
+  width: 100%;
+  height: 50px;
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  border: rgba(255, 255, 255, 0) 1px solid;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .calculatrice .mode button:hover {
+  background-color: rgba(41, 41, 41, 0.89);
+}
+
+.container .calculatrice .mode button:active {
+  background-color: unset;
+  border: white 1px solid;
+}
+
+.container .calculatrice .clavier {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .calculatrice .clavier .touche {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292929;
+  margin: 2px auto;
+  cursor: pointer;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 5px 5px 10px #1b1b1b, inset -5px -5px 10px #424242;
+          box-shadow: inset 5px 5px 10px #1b1b1b, inset -5px -5px 10px #424242;
+}
+
+.container .calculatrice .clavier .touche:hover {
+  background-color: rgba(41, 41, 41, 0.89);
+}
+
+.container .calculatrice .clavier .touche:active {
+  background-color: unset;
+}
+
+@media screen and (max-width: 450px) {
+  .mode {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mode button {
+    width: 42% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

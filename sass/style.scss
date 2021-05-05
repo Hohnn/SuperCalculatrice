@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+
+
+body {
+    background-color: rgb(41, 41, 41);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    color: white;
+    font-family: "Texturina", serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .calculatrice {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+        );
+        padding: 5px;
+        .screen {
+            width: 100%;
+            height: 80%;
+            border-radius: 15px;
+background: #e0e0e0;
+box-shadow: inset 9px 9px 10px #bebebe,
+            inset -9px -9px 10px #ffffff;
+        }
+        .mode {
+            display: flex;
+            margin-top: auto;
+            
+            button {
+                width: 100%;
+                height: 50px;
+                background-color: rgb(41, 41, 41);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                border: none;
+                border-radius: 10px;
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+                border: rgba(255, 255, 255, 0) 1px solid;
+                transition: 0.2s;
+            }
+            button:hover {
+                background-color: rgba(41, 41, 41, 0.89);
+            }
+            button:active {
+                background-color: unset;
+                border: white 1px solid;
+            
+            }
+        }
+        .clavier {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            .touche {
+                width: 32%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(41, 41, 41);
+                margin: 2px auto;
+                cursor: pointer;
+                transition: all 100ms;
+                border-radius: 5px;
+                box-shadow: inset 5px 5px 10px rgb(27, 27, 27),
+                            inset -5px -5px 10px rgb(66, 66, 66);
+            }
+            .touche:hover {
+                background-color: rgba(41, 41, 41, 0.89);
+            }
+            .touche:active {
+                background-color: unset;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mode {
+        flex-wrap: wrap;
+        justify-content: center;
+        button {
+            width: 42% !important;
+        }
+    }
+    
+}
