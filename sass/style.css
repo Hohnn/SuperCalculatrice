@@ -11,6 +11,11 @@ body {
   height: 100vh;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -47,6 +52,9 @@ body {
   background: #e0e0e0;
   -webkit-box-shadow: inset 9px 9px 10px #bebebe, inset -9px -9px 10px #ffffff;
           box-shadow: inset 9px 9px 10px #bebebe, inset -9px -9px 10px #ffffff;
+  color: black;
+  text-align: right;
+  padding: 30px;
 }
 
 .container .calculatrice .mode {
@@ -141,5 +149,9 @@ body {
   .mode button {
     width: 42% !important;
   }
+}
+
+p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

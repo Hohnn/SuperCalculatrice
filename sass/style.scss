@@ -11,6 +11,9 @@ body {
     width: 100vw;
     height: 100vh;
 }
+* {
+    box-sizing: border-box;
+}
 
 .container {
     width: 100%;
@@ -35,9 +38,12 @@ body {
             width: 100%;
             height: 80%;
             border-radius: 15px;
-background: #e0e0e0;
-box-shadow: inset 9px 9px 10px #bebebe,
+            background: #e0e0e0;
+            box-shadow: inset 9px 9px 10px #bebebe,
             inset -9px -9px 10px #ffffff;
+            color: black;
+            text-align: right;
+            padding: 30px;
         }
         .mode {
             display: flex;
@@ -104,4 +110,8 @@ box-shadow: inset 9px 9px 10px #bebebe,
         }
     }
     
+}
+
+p {
+    margin: 0;
 }
